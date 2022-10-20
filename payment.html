@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="payment form for trip">
+    <link rel="shortcut icon" href="rupee.png" type="image/x-icon">
+    <style>
+        body{
+            background-color: lightgreen;
+        }
+    </style>
+    <title>Payment form</title>
+</head>
+<body>
+    <div>
+        <fieldset>
+            <h2>Payment form</h2>
+        </fieldset>
+        <form action="form.js"></form>
+        <h3>user detail</h3>
+        <div> 
+            Name :<input type="text" id="Name"style="background-color: blanchedalmond;" required>           
+        </div>
+        <br>
+        <div> 
+            Ph number :<input type="text"style="background-color: blanchedalmond;" required>           
+        </div>
+        <br>
+        <label for="Male">
+            Gender: Male<input type="radio" name="myGender" id="Male" required>
+        </label>
+        <label for="Female">
+            Female <input type="radio" name="myGender" id="Female" required>
+        </label>
+        <label for="Other">
+            Other <input type="radio" name="myGender" id="Other" required>    
+        </label>
+        <br>
+        <br>
+        <div>
+            Email Add :<input type="email" name="email" id="personal id" style="background-color: blanchedalmond;" placeholder="abc@gmail.com" required>
+        </div>
+        <br>
+        Address :<br><textarea name="address" id="Address" cols="30" rows="10" placeholder="Your address"style="background-color: blanchedalmond;" required></textarea>
+        <br>
+        <br>
+        <div>
+            <label for="Pin code">
+                Pin code<input type="pin code" placeholder="XXXXXX" style="background-color: azure;" required>
+            </label>
+        </div>
+        <h3>payment details</h3>
+        <label for="Payment through online">
+           Payment option : Payment through online<input type="radio" name="payment">
+        </label>
+        <label for="Payment through card">
+            Payment through Card <input type="radio" name="payment">
+        </label>
+        <br>
+        <br>
+        <div>
+            online payment : <select name="online payment" id="Payment through online">
+                 <option value="">--select choice--</option>  
+                 <option value="paytm">paytm</option>  
+                 <option value="google pay">Google pay</option>  
+                 <option value="razor pay">Razor-pay</option>  
+        </select>
+        <br>
+        </div>
+        Qr code : <br><img src="Qr code.png" alt="Qr code">
+        <br>
+        <div>
+            Card type : <select name="card type" id="Card type">
+                <option value="">--select card type--</option>
+                <option value="visa">visa</option>
+                <option value="rupay">rupay</option>
+                <option value="Master card">Master card</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            Card Number : <input type="number" name="card_number" id="card_number">
+        </div>
+        <br>
+        <div>
+        CVV : <input type="password" name="cvv" id="cvv">
+        </div>
+        <br>
+        OTP :<input type="number" name="number" id="otp">
+        <br>
+        <br>
+        <input type="submit" value="Pay now">
+        <button>Namaste world</button>
+    </div>
+    
+</body>
+</html>
